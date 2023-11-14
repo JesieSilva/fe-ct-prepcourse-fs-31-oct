@@ -107,9 +107,9 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if (num %3 ===0 && num %5 ===0) return "fizzbuzz"
+   if (num % 3 === 0 && num % 5 === 0) return "fizzbuzz"
    else if (num % 3 === 0) return "fizz"
-   else if (num % 5===0) return "buzz"
+   else if (num % 5=== 0) return "buzz"
    else return false
 }
 // console.log(fizzBuzz(15))
@@ -122,8 +122,8 @@ function operadoresLogicos(num1, num2, num3) {
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
-   if (num1 ===0 && num2 ===0 && num3 ===0) return "Error"
-   if (num1 > num2 && num1 > num3 && num1 >0) return "Numero 1 es mayor y positivo"
+   if (num1 === 0 && num2 === 0 && num3 === 0) return "Error"
+   if (num1 > num2 && num1 > num3 && num1 > 0) return "Numero 1 es mayor y positivo"
    if(num1 < 0 || num2 < 0|| num3 < 0) return "Hay negativos"
    if (num3 > num1 && num3 > num2) return ++num3
    else return false
@@ -140,7 +140,7 @@ function esPrimo(num) {
       return false
    }
    for (var i = 2; i < num; i++) {
-      var formula= num % i  
+      var formula = num % i  
       if (formula === 0) return false
       }
    }
@@ -152,7 +152,7 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (valor == "verdadero") return "Soy verdadero"
+   if (valor === true) return "Soy verdadero"
    else return "Soy falso"
 }
 console.log(esVerdadero("verdadero"))
